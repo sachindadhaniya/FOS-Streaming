@@ -84,7 +84,7 @@ do
 		apt-get install libmhash-dev libpcre3 libpcre3-dev make build-essential libxslt1-dev git -y
 		apt-get install libssl-dev -y
 		apt-get install git -y
-		apt-get install apache2 libapache2-mod-php5 php5 php5-mysql mysql-server phpmyadmin php5-fpm unzip -y
+		apt-get install apache2 libapache2-mod-php7.0 php7.0 php7.0-mysql mysql-server phpmyadmin php7.0-fpm unzip -y
 		echo "done"
 	    echo "##Installing and configuring nginx and the FOS-Streaming panel##"
 		#**************if you already have nginx remove it from this line**************#
@@ -100,7 +100,7 @@ do
 		 #**************NGINX INSTALL END LINE**************#
 		rm -r /usr/local/nginx/conf/nginx.conf
 		cd /usr/src/
-		git clone https://github.com/zgelici/FOS-Streaming.git
+		git clone https://github.com/sachindadhaniya/FOS-Streaming.git
 		cd /usr/src/FOS-Streaming/
 		mv /usr/src/FOS-Streaming/nginx.conf /usr/local/nginx/conf/nginx.conf
 		mv /usr/src/FOS-Streaming/* /usr/local/nginx/html/
